@@ -1,7 +1,7 @@
 不明なものは飛ばしてます。値段は1枚あたりの単品価格。価格は秋月価格
 
 1.実装部品
-1)ピンヘッダ　1-40 40円
+  1)ピンヘッダ　1-40 40円
 http://akizukidenshi.com/catalog/g/gC-00167/
 2)半固定ボリューム 0-100kΩ 50円
 http://akizukidenshi.com/catalog/g/gP-06113/
