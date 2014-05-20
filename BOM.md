@@ -24,5 +24,7 @@ http://akizukidenshi.com/catalog/g/gP-07258/
 
 追加1  
 ターミナルブロック　2ピン（緑）（縦）小  20円 × ２個  40円  
-
-ここで８２６円  
+http://akizukidenshi.com/catalog/g/gP-02333/  
+電池ボックス　単３×２本　プラスチック　ピン付 40円
+http://akizukidenshi.com/catalog/g/gP-03086/  
+ここで866円  
