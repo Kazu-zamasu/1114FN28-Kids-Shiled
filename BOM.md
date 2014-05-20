@@ -23,8 +23,18 @@ http://akizukidenshi.com/catalog/g/gP-07258/
 ７８６円です。
 
 追加1  
-ターミナルブロック　2ピン（緑）（縦）小  20円 × ２個  40円  
+1)ターミナルブロック　2ピン（緑）（縦）小  20円 × ２個  40円  
 http://akizukidenshi.com/catalog/g/gP-02333/  
-電池ボックス　単３×２本　プラスチック　ピン付 40円
+2)電池ボックス　単３×２本　プラスチック　ピン付 40円
 http://akizukidenshi.com/catalog/g/gP-03086/  
 ここで866円  
+
+追加2
+1)タクトスイッチ（赤色・黒色）各１つづつ 10円×2個 20円  
+http://akizukidenshi.com/catalog/g/gP-03646/
+2)トグルスイッチ1回路2接点（ON-ONタイプ 80円
+http://akizukidenshi.com/catalog/g/gP-03774/
+3)トグルスイッチ2回路2接点（ON－OFF－ONタイプ）中点OFF 100円
+http://akizukidenshi.com/catalog/g/gP-07399/  
+
+ここで、1066円
