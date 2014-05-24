@@ -53,8 +53,8 @@ http://akizukidenshi.com/catalog/g/gI-02426/
   
 4)抵抗内蔵5mm赤色LED（5V用）OSR6LU5B64A-5V (10個入) 120円 1つあたり12円 赤・緑は価格同じなので24円  
 http://akizukidenshi.com/catalog/g/gI-06245/  
-5)RGBフルカラーLED（４本足）5mm [OSTA-5131A] (1個入) 100円   
-http://akizukidenshi.com/catalog/g/gI-00729/  
+5)RGBフルカラーLED（４本足）5mm [OSTA-5131A] (10個入) 1個50円   
+http://akizukidenshi.com/catalog/g/gI-03037/  
 3)フォトICダイオードS9648-100 120円×1  
 http://akizukidenshi.com/catalog/g/gI-02426/  
   
@@ -62,4 +62,4 @@ http://akizukidenshi.com/catalog/g/gI-02426/
 以下削除  
 2-2)トグルスイッチ1回路2接点（ON-ONタイプ 80円  
 http://akizukidenshi.com/catalog/g/gP-03774/  
-ここで934円  
+ここで884円  
