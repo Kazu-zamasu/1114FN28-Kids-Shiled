@@ -381,16 +381,29 @@
 <text x="-3.81" y="-3.81" size="1.27" layer="21">S9648-100</text>
 </package>
 <package name="SIPC-6">
+<wire x1="-1.27" y1="7.3025" x2="1.27" y2="7.3025" width="0.127" layer="21"/>
+<wire x1="1.27" y1="7.3025" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="7.3025" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-7.62" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="6.35" drill="0.8" shape="long"/>
 <pad name="P$2" x="0" y="3.81" drill="0.8" shape="long"/>
 <pad name="P$3" x="0" y="1.27" drill="0.8" shape="long"/>
 <pad name="P$4" x="0" y="-1.27" drill="0.8" shape="long"/>
 <pad name="P$5" x="0" y="-3.81" drill="0.8" shape="long"/>
 <pad name="P$6" x="0" y="-6.35" drill="0.8" shape="long"/>
-<wire x1="-1.27" y1="7.3025" x2="1.27" y2="7.3025" width="0.127" layer="21"/>
-<wire x1="1.27" y1="7.3025" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="7.3025" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-7.62" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
+</package>
+<package name="SIPC-7">
+<wire x1="-1.27" y1="8.5725" x2="1.27" y2="8.5725" width="0.127" layer="21"/>
+<wire x1="1.27" y1="8.5725" x2="1.27" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="8.5725" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-8.89" x2="1.27" y2="-8.89" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="7.62" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$2" x="0" y="5.08" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$3" x="0" y="2.54" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$4" x="0" y="0" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$5" x="0" y="-2.54" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$6" x="0" y="-5.08" drill="0.8" shape="long" rot="R180"/>
+<pad name="P$7" x="0" y="-7.62" drill="0.8" shape="long" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -732,18 +745,40 @@
 </polygon>
 </symbol>
 <symbol name="SIPS-6">
-<pin name="P$1" x="0" y="6.35" length="middle" rot="R180"/>
-<pin name="P$2" x="0" y="3.81" length="middle" rot="R180"/>
-<pin name="P$3" x="0" y="1.27" length="middle" rot="R180"/>
-<pin name="P$4" x="0" y="-1.27" length="middle" rot="R180"/>
-<pin name="P$5" x="0" y="-3.81" length="middle" rot="R180"/>
-<pin name="P$6" x="0" y="-6.35" length="middle" rot="R180"/>
 <circle x="0" y="6.35" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="3.81" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-3.81" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-6.35" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="6.35" length="middle" rot="R180"/>
+<pin name="P$2" x="0" y="3.81" length="middle" rot="R180"/>
+<pin name="P$3" x="0" y="1.27" length="middle" rot="R180"/>
+<pin name="P$4" x="0" y="-1.27" length="middle" rot="R180"/>
+<pin name="P$5" x="0" y="-3.81" length="middle" rot="R180"/>
+<pin name="P$6" x="0" y="-6.35" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SIPS-2">
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="1.27" length="middle" rot="R180"/>
+<pin name="P$2" x="0" y="-1.27" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SIPS-7">
+<circle x="0" y="7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="7.62" length="middle" rot="R180"/>
+<pin name="P$2" x="0" y="5.08" length="middle" rot="R180"/>
+<pin name="P$3" x="0" y="2.54" length="middle" rot="R180"/>
+<pin name="P$4" x="0" y="0" length="middle" rot="R180"/>
+<pin name="P$5" x="0" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$6" x="0" y="-5.08" length="middle" rot="R180"/>
+<pin name="P$7" x="0" y="-7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -999,10 +1034,17 @@
 <deviceset name="C-03784">
 <gates>
 <gate name="G$1" symbol="SIPS-6" x="0" y="0"/>
-<gate name="G$2" symbol="SIPS-6" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SIPC-6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

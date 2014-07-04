@@ -748,7 +748,6 @@
 <wire x1="64.77" y1="35.56" x2="64.77" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="40.64" x2="120.65" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="VR.1" gate="G$1" pin="E"/>
-<junction x="68.58" y="35.56"/>
 <wire x1="120.65" y1="40.64" x2="120.65" y2="1.27" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$7"/>
 <wire x1="120.65" y1="1.27" x2="137.16" y2="1.27" width="0.1524" layer="91"/>
@@ -777,7 +776,6 @@
 <wire x1="118.11" y1="-3.81" x2="137.16" y2="-3.81" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$9"/>
 <pinref part="VR.1" gate="G$1" pin="S"/>
-<junction x="73.66" y="30.48"/>
 </segment>
 </net>
 </nets>

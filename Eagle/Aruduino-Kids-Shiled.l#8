@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -361,6 +361,11 @@
 <wire x1="-6.35" y1="-17.4625" x2="-6.35" y2="17.4625" width="0.127" layer="21"/>
 <wire x1="6.35" y1="17.4625" x2="6.35" y2="-17.4625" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-17.4625" x2="3.81" y2="17.4625" width="0.127" layer="21"/>
+<wire x1="0" y1="33.02" x2="7.62" y2="33.02" width="0.127" layer="21"/>
+<wire x1="7.62" y1="33.02" x2="7.62" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="33.02" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="33.02" x2="0" y2="33.02" width="0.127" layer="21"/>
 </package>
 <package name="PHOTO-IC">
 <circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
@@ -374,6 +379,18 @@
 <wire x1="1.27" y1="2.54" x2="3.81" y2="5.08" width="0.127" layer="21"/>
 <wire x1="2.54" y1="1.27" x2="5.08" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.81" y="-3.81" size="1.27" layer="21">S9648-100</text>
+</package>
+<package name="SIPC-6">
+<wire x1="-1.27" y1="7.3025" x2="1.27" y2="7.3025" width="0.127" layer="21"/>
+<wire x1="1.27" y1="7.3025" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="7.3025" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-7.62" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="6.35" drill="0.8" shape="long"/>
+<pad name="P$2" x="0" y="3.81" drill="0.8" shape="long"/>
+<pad name="P$3" x="0" y="1.27" drill="0.8" shape="long"/>
+<pad name="P$4" x="0" y="-1.27" drill="0.8" shape="long"/>
+<pad name="P$5" x="0" y="-3.81" drill="0.8" shape="long"/>
+<pad name="P$6" x="0" y="-6.35" drill="0.8" shape="long"/>
 </package>
 </packages>
 <symbols>
@@ -714,6 +731,20 @@
 <vertex x="0.889" y="-2.667"/>
 </polygon>
 </symbol>
+<symbol name="SIPS-6">
+<circle x="0" y="6.35" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="3.81" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-3.81" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-6.35" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="6.35" length="middle" rot="R180"/>
+<pin name="P$2" x="0" y="3.81" length="middle" rot="R180"/>
+<pin name="P$3" x="0" y="1.27" length="middle" rot="R180"/>
+<pin name="P$4" x="0" y="-1.27" length="middle" rot="R180"/>
+<pin name="P$5" x="0" y="-3.81" length="middle" rot="R180"/>
+<pin name="P$6" x="0" y="-6.35" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="R" prefix="R" uservalue="yes">
@@ -943,6 +974,35 @@
 <connect gate="G$1" pin="P$8" pad="P$8"/>
 <connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S9648-100">
+<gates>
+<gate name="G$1" symbol="PHOTO-IC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PHOTO-IC">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-03784">
+<gates>
+<gate name="G$1" symbol="SIPS-6" x="0" y="0"/>
+<gate name="G$2" symbol="SIPS-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
