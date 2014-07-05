@@ -7,11 +7,13 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.6.0/lbr/supply1.lbr"
+UsedLibrary="/Applications/EAGLE-6.6.0/lbr/varistor.lbr"
 UsedLibrary="Aruduino-Kids-Shiled.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="640 410 1239 809"
+Loc="429 199 1368 800"
 State=2
 Number=0
 
