@@ -969,10 +969,10 @@
 <devices>
 <device name="" package="TACT-SW">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="1" pad="4"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="4" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1168,8 +1168,8 @@
 <device name="" package="DTS6V">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+<connect gate="G$1" pin="3" pad="P$2"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
