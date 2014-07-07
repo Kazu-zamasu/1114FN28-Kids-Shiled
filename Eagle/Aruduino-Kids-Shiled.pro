@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/Kazu-iMac-Test/Documents/eagle/Arduino-Kids-Shiled/Aruduino-Kids-Shiled.brd
 
-Start at      : 00:41:11 (2014/07/05)
-End at        : 00:41:11 (2014/07/05)
+Start at      : 13:13:59 (2014/07/07)
+End at        : 13:13:59 (2014/07/07)
 Elapsed time  : 00:00:00
 
-Signals       :    21   RoutingGrid: 50 mil  Layers: 2
-Connections   :    43   predefined:  37 ( 4 Vias )
+Signals       :   173   RoutingGrid: 50 mil  Layers: 1
+Connections   :    51   predefined:  50 ( 147 Vias )
 
-Router memory :   28116
+Router memory :   64500
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
 Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         1         0         0         0         0
-max. Level        :         1         0         0         0         0
-max. Total        :         1         0         0         0         0
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         6         6         6         6         6
-Vias              :         7         3         1         1         3
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0         0         0         0         0
+Vias              :         0         0         0         0         0
+Resolution        :    98.0 %    98.0 %    98.0 %    98.0 %    98.0 %
 
-Final             : 100.0% finished
+Final             : 98.1% finished
