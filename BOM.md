@@ -63,3 +63,28 @@ http://akizukidenshi.com/catalog/g/gI-02426/
 2-2)トグルスイッチ1回路2接点（ON-ONタイプ 80円  
 http://akizukidenshi.com/catalog/g/gP-03774/  
 ここで884円  
+  
+最終仕様  
+1)半固定ボリューム 0-100kΩ 50円  
+http://akizukidenshi.com/catalog/g/gP-06113/  
+2)フォトICダイオードS9648-100 120円×1  
+http://akizukidenshi.com/catalog/g/gI-02426/  
+3)抵抗内蔵5mm赤色LED（5V用）OSR6LU5B64A-5V (10個入) 120円 1つあたり12円 緑は価格同じなので24円  
+http://akizukidenshi.com/catalog/g/gI-06245/  
+4)サーミスタ 10kΩ（ラジアルリードタイプ）50円  
+http://akizukidenshi.com/catalog/g/gP-07258/  
+5)タクトスイッチ（赤色・黒色）各１つづつ 10円×2個 20円  
+http://akizukidenshi.com/catalog/g/gP-03646/  
+6)トグルスイッチ1回路2接点（ON-ONタイプ 80円  
+http://akizukidenshi.com/catalog/g/gP-03774/  
+8)NchパワーMOSFET　IRFU120NPBF  50円×2 100円
+http://akizukidenshi.com/catalog/g/gI-06050/
+9)ターミナルブロック　2ピン（緑）（縦）小  20円 × ２個  40円  
+http://akizukidenshi.com/catalog/g/gP-02333/  
+10)ピンソケット(メス)1×8(8P) 30円  
+http://akizukidenshi.com/catalog/g/gC-03785/  
+11)分割ロングピンソケット 1ｘ42(42P)  80円　６個使用　11.4円   
+http://akizukidenshi.com/catalog/g/gC-03785/  
+12)ピンソケット(メス) 1×14 (14P) 50円 ２個使用　100円
+
+合計625.4円　その他基板作成費および実装費用
