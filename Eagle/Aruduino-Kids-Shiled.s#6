@@ -444,8 +444,8 @@
 <pin name="1" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="3" rot="R180"/>
 </symbol>
 <symbol name="TB">
-<pin name="P$1" x="1.27" y="6.35" length="short" direction="pas"/>
-<pin name="P$2" x="1.27" y="1.27" length="short" direction="pas"/>
+<pin name="P1" x="1.27" y="6.35" visible="pin" length="short" direction="pas"/>
+<pin name="P2" x="1.27" y="1.27" visible="pin" length="short" direction="pas"/>
 </symbol>
 <symbol name="R-VOL">
 <wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -721,8 +721,8 @@
 <devices>
 <device name="" package="TB">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P1" pad="P$1"/>
+<connect gate="G$1" pin="P2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1045,12 +1045,12 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="LED1" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="5V-12mA-Include-R"/>
-<part name="LED2" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="5V-12mA-Include-R"/>
+<part name="LED1" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="I-06245-R"/>
+<part name="LED2" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="I-06245-G"/>
 <part name="0-50C" library="Aruduino-Kids-Shiled" deviceset="NTC-103-AT-2" device=""/>
 <part name="T-SW1" library="Aruduino-Kids-Shiled" deviceset="SW-2MS1-T1-B4-VS2-Q-E-TOGLE" device="" value="P-00300"/>
-<part name="TB1" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="2A"/>
-<part name="TB2" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device=""/>
+<part name="TB1" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="P-01306"/>
+<part name="TB2" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="P-01306"/>
 <part name="VR.1" library="Aruduino-Kids-Shiled" deviceset="TSR-3386K" device="" value="10K"/>
 <part name="U$4" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="IR-6050"/>
 <part name="U$5" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="IR6050"/>
@@ -1106,11 +1106,12 @@ DIN A4, landscape with location and doc. field</description>
 <text x="167.513" y="-24.765" size="1.778" layer="95" rot="MR0" align="bottom-right">TP2</text>
 <text x="115.57" y="67.31" size="1.778" layer="95" align="bottom-right">TP1</text>
 <text x="171.958" y="-48.514" size="1.778" layer="95" align="bottom-right">TP4</text>
-<text x="250.698" y="-42.799" size="1.778" layer="95" align="bottom-right">Tr1</text>
-<text x="220.853" y="-43.434" size="1.778" layer="95" align="bottom-right">Tr2</text>
+<text x="250.19" y="-32.131" size="1.778" layer="95" align="bottom-right">Tr1</text>
+<text x="220.853" y="-32.004" size="1.778" layer="95" align="bottom-right">Tr2</text>
 <text x="154.305" y="-15.24" size="1.778" layer="95" rot="MR0" align="bottom-right">mbed 1114FN28</text>
-<text x="217.678" y="-57.785" size="1.778" layer="95" rot="MR0" align="bottom-right">P2</text>
-<text x="245.618" y="-57.15" size="1.778" layer="95" rot="MR0" align="bottom-right">P1</text>
+<text x="225.298" y="-59.817" size="1.778" layer="95" rot="MR0" align="bottom-right">P2</text>
+<text x="239.268" y="-59.944" size="1.778" layer="95" rot="MR0" align="bottom-right">P1</text>
+<text x="228.6" y="-65.151" size="1.778" layer="95" rot="MR0" align="bottom-right">P-01306</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="229.997" y="57.277" rot="MR270"/>
@@ -1129,10 +1130,10 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="VALUE" x="77.724" y="20.447" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$4" gate="G$1" x="248.285" y="-34.925" smashed="yes" rot="R270">
-<attribute name="VALUE" x="248.285" y="-40.005" size="1.778" layer="96"/>
+<attribute name="VALUE" x="243.713" y="-40.513" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="219.075" y="-34.925" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="214.63" y="-38.735" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="214.884" y="-38.481" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="U$1" gate="G$1" x="162.814" y="5.715"/>
 <instance part="U$2" gate="G$1" x="91.059" y="-20.32" smashed="yes" rot="R180">
@@ -1291,7 +1292,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$5" gate="G$1" pin="D"/>
 <wire x1="213.995" y1="-36.195" x2="213.995" y2="-61.595" width="0.1524" layer="91"/>
 <wire x1="213.995" y1="-61.595" x2="224.155" y2="-61.595" width="0.1524" layer="91"/>
-<pinref part="TB2" gate="G$1" pin="P$1"/>
+<pinref part="TB2" gate="G$1" pin="P1"/>
 <junction x="213.995" y="-36.195"/>
 </segment>
 </net>
@@ -1300,7 +1301,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$4" gate="G$1" pin="D"/>
 <wire x1="253.365" y1="-36.195" x2="253.365" y2="-61.595" width="0.1524" layer="91"/>
 <wire x1="253.365" y1="-61.595" x2="243.205" y2="-61.595" width="0.1524" layer="91"/>
-<pinref part="TB1" gate="G$1" pin="P$1"/>
+<pinref part="TB1" gate="G$1" pin="P1"/>
 <junction x="253.365" y="-36.195"/>
 <junction x="243.205" y="-61.595"/>
 </segment>
@@ -1512,8 +1513,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="243.205" y1="-36.195" x2="234.315" y2="-36.195" width="0.1524" layer="91"/>
 <wire x1="234.315" y1="-36.195" x2="224.155" y2="-36.195" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="S"/>
-<pinref part="TB2" gate="G$1" pin="P$2"/>
-<pinref part="TB1" gate="G$1" pin="P$2"/>
+<pinref part="TB2" gate="G$1" pin="P2"/>
+<pinref part="TB1" gate="G$1" pin="P2"/>
 <wire x1="243.205" y1="-56.515" x2="243.205" y2="-36.195" width="0.1524" layer="91"/>
 <wire x1="224.155" y1="-56.515" x2="224.155" y2="-36.195" width="0.1524" layer="91"/>
 <junction x="234.315" y="-36.195"/>
@@ -1548,8 +1549,6 @@ DIN A4, landscape with location and doc. field</description>
 </sheets>
 <errors>
 <approved hash="113,1,173.886,-5.184,FRAME1,,,,,"/>
-<approved hash="113,1,270.568,10.9135,TACTSW2,,,,,"/>
-<approved hash="113,1,269.298,-4.32647,TACTSW1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

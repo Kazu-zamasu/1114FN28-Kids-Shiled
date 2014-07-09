@@ -1148,7 +1148,7 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY2" gate="GND" x="286.385" y="19.685"/>
 <instance part="SUPPLY3" gate="GND" x="286.385" y="4.445"/>
 <instance part="SUPPLY4" gate="GND" x="234.315" y="-43.815"/>
-<instance part="SUPPLY5" gate="GND" x="233.68" y="0.635"/>
+<instance part="SUPPLY5" gate="GND" x="233.68" y="3.683"/>
 <instance part="SUPPLY6" gate="G$1" x="216.027" y="57.277"/>
 <instance part="P14" gate="G$1" x="128.27" y="-16.51"/>
 <instance part="SUPPLY7" gate="G$1" x="216.027" y="47.117"/>
@@ -1203,8 +1203,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="121.539" y1="32.893" x2="121.539" y2="6.985" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="7"/>
 <wire x1="121.539" y1="6.985" x2="155.194" y2="6.985" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-20.32" x2="83.82" y2="-20.193" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-20.193" x2="83.82" y2="-15.367" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-20.32" x2="83.82" y2="-15.367" width="0.1524" layer="91"/>
 <wire x1="68.834" y1="24.257" x2="65.659" y2="24.257" width="0.1524" layer="91"/>
 <wire x1="65.659" y1="24.257" x2="65.659" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="65.659" y1="-20.32" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
@@ -1213,7 +1212,7 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="65.659" y="24.257"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="115.189" y="33.782" size="1.778" layer="95"/>
-<junction x="83.82" y="-20.193"/>
+<junction x="83.82" y="-20.32"/>
 </segment>
 </net>
 <net name="A-GND" class="0">
@@ -1234,15 +1233,14 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="100.584" y1="24.257" x2="100.584" y2="19.431" width="0.1524" layer="91"/>
 <junction x="100.584" y="24.257"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="100.584" y1="19.431" x2="100.584" y2="19.304" width="0.1524" layer="91"/>
-<wire x1="100.584" y1="19.304" x2="100.584" y2="16.002" width="0.1524" layer="91"/>
+<wire x1="100.584" y1="19.431" x2="100.584" y2="16.002" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="16.764" x2="83.82" y2="24.257" width="0.1524" layer="91"/>
 <pinref part="0-50C" gate="G$1" pin="1"/>
 <label x="104.8258" y="25.019" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="8"/>
 <wire x1="113.411" y1="47.625" x2="127.889" y2="47.625" width="0.1524" layer="91"/>
 <junction x="127.889" y="4.445"/>
-<junction x="100.584" y="19.304"/>
+<junction x="100.584" y="19.431"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -1253,15 +1251,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="73.787" y1="29.21" x2="117.221" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="117.221" y1="29.21" x2="117.221" y2="1.905" width="0.1524" layer="91"/>
 <wire x1="117.221" y1="1.905" x2="155.194" y2="1.905" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$126" class="0">
-<segment>
-<wire x1="233.68" y1="4.445" x2="233.68" y2="3.175" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="233.68" y1="3.175" x2="233.68" y2="6.985" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="22"/>
-<wire x1="170.434" y1="6.985" x2="233.68" y2="6.985" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1528,24 +1517,20 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 <label x="174.625" y="-45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="233.68" y1="6.223" x2="233.68" y2="6.985" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="22"/>
+<wire x1="170.434" y1="6.985" x2="233.68" y2="6.985" width="0.1524" layer="91"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,286.385,22.225,GND,N$126,,,,"/>
-<approved hash="102,1,286.385,6.985,GND,N$126,,,,"/>
-<approved hash="102,1,234.315,-41.275,GND,N$126,,,,"/>
-<approved hash="102,1,233.68,3.175,GND,N$126,,,,"/>
-<approved hash="102,1,286.385,45.085,GND,N$126,,,,"/>
-<approved hash="102,1,184.15,-57.15,GND,N$126,,,,"/>
-<approved hash="102,1,183.642,-43.434,GND,N$126,,,,"/>
-<approved hash="108,1,233.68,3.175,N$126,,,,,"/>
-<approved hash="108,1,85.09,-27.94,N$5,,,,,"/>
 <approved hash="113,1,173.886,-5.184,FRAME1,,,,,"/>
 <approved hash="113,1,270.568,10.9135,TACTSW2,,,,,"/>
 <approved hash="113,1,269.298,-4.32647,TACTSW1,,,,,"/>
-<approved hash="115,1,153.797,-10.795,P14,,,,,"/>
 <approved hash="115,1,175.704,-39.624,P18,,,,,"/>
 <approved hash="115,1,174.117,-3.175,P18,,,,,"/>
 <approved hash="115,1,174.942,-52.07,P24,,,,,"/>

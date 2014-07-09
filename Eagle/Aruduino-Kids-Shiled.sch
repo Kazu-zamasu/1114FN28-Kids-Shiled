@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1116,7 +1116,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-86.868" y="18.415" size="1.778" layer="95" align="bottom-right">P-06113</text>
 <text x="-74.422" y="18.669" size="1.778" layer="95" rot="R90" align="bottom-right">R-25103</text>
 <text x="-58.42" y="18.415" size="1.778" layer="95" rot="R90" align="bottom-right">P-06165</text>
-<text x="-75.692" y="-3.683" size="1.778" layer="95" rot="R90" align="bottom-right">R-25752</text>
+<text x="-77.1906" y="-4.3688" size="1.778" layer="95" rot="R90" align="bottom-right">R-25752</text>
 <text x="-70.104" y="-24.765" size="1.778" layer="95" align="bottom-right">I-02426</text>
 <text x="27.178" y="-33.655" size="1.778" layer="95" align="bottom-right">C-05779
 (TP2,TP3,TP4)</text>

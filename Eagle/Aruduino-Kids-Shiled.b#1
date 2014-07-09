@@ -145,7 +145,7 @@
 <dimension x1="86" y1="0.018" x2="84" y2="2.02" x3="95.3008" y3="1.019" textsize="1.778" layer="44" dtype="vertical" visible="yes"/>
 <dimension x1="0" y1="53.018" x2="86.0044" y2="51.6636" x3="43.0022" y3="59.9186" textsize="1.778" layer="20" dtype="horizontal" visible="yes"/>
 <dimension x1="86" y1="53.018" x2="77.7494" y2="0" x3="102.3874" y3="26.509" textsize="1.778" layer="20" dtype="vertical" precision="1" visible="yes"/>
-<dimension x1="2.58005" y1="1.532615625" x2="1.43995" y2="2.507384375" x3="-1.193803125" y3="-1.727196875" textsize="1.778" layer="20" dtype="diameter" visible="yes"/>
+<dimension x1="3.01" y1="2.019228125" x2="1.01" y2="2.020771875" x3="2.006596875" y3="-2.3876" textsize="1.778" layer="44" dtype="diameter" visible="yes"/>
 </plain>
 <libraries>
 <library name="Aruduino-Kids-Shiled">
@@ -748,12 +748,17 @@ design rules under a new name.</description>
 <wire x1="68.1462" y1="23.832" x2="58.3672" y2="23.832" width="1.016" layer="1"/>
 </signal>
 <signal name="N$22">
+<contactref element="U$4" pad="4"/>
+<contactref element="U$4" pad="2"/>
 <contactref element="TB1" pad="P$1"/>
+<wire x1="68.1462" y1="34.5" x2="68.1902" y2="34.544" width="1.016" layer="1" curve="-90"/>
 <wire x1="81.2526" y1="37.0146" x2="81.2458" y2="37.0078" width="1.016" layer="1" curve="-90"/>
 <wire x1="81.2458" y1="37.0078" x2="75.8444" y2="37.0078" width="1.016" layer="1"/>
 <wire x1="75.8444" y1="37.0078" x2="74.676" y2="35.8394" width="1.016" layer="1" curve="90"/>
 <wire x1="74.676" y1="35.8394" x2="74.676" y2="35.433" width="1.016" layer="1"/>
 <wire x1="74.676" y1="35.433" x2="73.743" y2="34.5" width="1.016" layer="1" curve="-90"/>
+<wire x1="73.743" y1="34.5" x2="68.1462" y2="34.5" width="1.016" layer="1"/>
+<wire x1="68.1462" y1="34.5" x2="58.3672" y2="34.5" width="1.016" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="T-SW1" pad="P$1"/>

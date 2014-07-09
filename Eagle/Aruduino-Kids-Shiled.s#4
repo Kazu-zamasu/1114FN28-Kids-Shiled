@@ -1045,8 +1045,8 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="LED1" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="5V-12mA-Include-R"/>
-<part name="LED2" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="5V-12mA-Include-R"/>
+<part name="LED1" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="I-06245-R"/>
+<part name="LED2" library="Aruduino-Kids-Shiled" deviceset="LED5MM" device="" value="I-06245-G"/>
 <part name="0-50C" library="Aruduino-Kids-Shiled" deviceset="NTC-103-AT-2" device=""/>
 <part name="T-SW1" library="Aruduino-Kids-Shiled" deviceset="SW-2MS1-T1-B4-VS2-Q-E-TOGLE" device="" value="P-00300"/>
 <part name="TB1" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="P-01306"/>
@@ -1065,9 +1065,9 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="V&lt;--" device="" value="P14"/>
-<part name="P14" library="supply2" deviceset="V--&gt;" device="" value="P14"/>
+<part name="P14" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="SUPPLY7" library="supply2" deviceset="V&lt;--" device="" value="P28"/>
-<part name="SUPPLY8" library="supply2" deviceset="V&lt;--" device="" value="P28"/>
+<part name="SUPPLY8" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="P1" library="supply2" deviceset="V--&gt;" device="" value=""/>
 <part name="P2" library="supply2" deviceset="V--&gt;" device="" value=""/>
@@ -1112,15 +1112,19 @@ DIN A4, landscape with location and doc. field</description>
 <text x="225.298" y="-59.817" size="1.778" layer="95" rot="MR0" align="bottom-right">P2</text>
 <text x="239.268" y="-59.944" size="1.778" layer="95" rot="MR0" align="bottom-right">P1</text>
 <text x="228.6" y="-65.151" size="1.778" layer="95" rot="MR0" align="bottom-right">P-01306</text>
-<text x="88.646" y="16.129" size="1.778" layer="95" rot="R90" align="bottom-right">P-07258</text>
+<text x="81.788" y="15.621" size="1.778" layer="95" rot="R90" align="bottom-right">P-07258</text>
 <text x="78.486" y="16.637" size="1.778" layer="95" align="bottom-right">P-06113</text>
 <text x="90.932" y="16.129" size="1.778" layer="95" rot="R90" align="bottom-right">R-25103</text>
+<text x="107.188" y="15.875" size="1.778" layer="95" rot="R90" align="bottom-right">P-06165</text>
+<text x="89.662" y="-5.461" size="1.778" layer="95" rot="R90" align="bottom-right">R-25752</text>
+<text x="95.25" y="-26.543" size="1.778" layer="95" align="bottom-right">I-02426</text>
+<text x="165.608" y="-45.593" size="1.778" layer="95" align="bottom-right">C-05779</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="229.997" y="57.277" rot="MR270"/>
 <instance part="LED2" gate="G$1" x="229.997" y="47.117" rot="MR270"/>
 <instance part="0-50C" gate="G$1" x="83.82" y="11.684" smashed="yes" rot="R180">
-<attribute name="VALUE" x="81.788" y="3.556" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="88.138" y="3.556" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="T-SW1" gate="G$1" x="264.795" y="26.035" smashed="yes" rot="MR0">
 <attribute name="NAME" x="267.843" y="30.861" size="1.778" layer="95" rot="MR0"/>
@@ -1173,7 +1177,10 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY11" gate="G$1" x="195.58" y="-52.07"/>
 <instance part="SUPPLY12" gate="G$1" x="196.977" y="-39.624"/>
 <instance part="SUPPLY13" gate="GND" x="183.642" y="-45.974"/>
-<instance part="R2" gate="G$1" x="83.82" y="-10.287" rot="MR90"/>
+<instance part="R2" gate="G$1" x="83.82" y="-10.287" smashed="yes" rot="MR90">
+<attribute name="NAME" x="85.5726" y="-12.065" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="80.264" y="-13.081" size="1.778" layer="96" rot="MR90"/>
+</instance>
 <instance part="TACTSW2" gate="G$1" x="270.51" y="9.525" smashed="yes">
 <attribute name="NAME" x="265.684" y="14.351" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.414" y="3.937" size="1.778" layer="96"/>
@@ -1192,7 +1199,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="155.194" y1="-10.795" x2="147.955" y2="-10.795" width="0.1524" layer="91"/>
 <wire x1="147.955" y1="-10.795" x2="147.955" y2="-16.51" width="0.1524" layer="91"/>
 <wire x1="147.955" y1="-16.51" x2="143.51" y2="-16.51" width="0.1524" layer="91"/>
-<label x="147.32" y="-20.32" size="1.778" layer="95"/>
+<label x="133.096" y="-17.526" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -1204,7 +1211,7 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="28"/>
 <wire x1="177.8" y1="22.225" x2="170.434" y2="22.225" width="0.1524" layer="91"/>
-<label x="172.72" y="25.4" size="1.778" layer="95"/>
+<label x="183.896" y="21.336" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
