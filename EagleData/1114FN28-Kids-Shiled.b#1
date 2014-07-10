@@ -140,7 +140,7 @@
 <dimension x1="0" y1="53.018" x2="2" y2="50.97" x3="-5.9944" y3="51.994" textsize="1.778" layer="44" dtype="vertical" precision="1" visible="yes"/>
 <hole x="2.01" y="2.02" drill="2.1"/>
 <hole x="84" y="2.02" drill="2.1"/>
-<hole x="84" y="50.97" drill="2.1"/>
+<hole x="84" y="50.97" drill="2"/>
 <dimension x1="86" y1="0.018" x2="84" y2="2.02" x3="85" y3="-3.3274" textsize="1.778" layer="44" dtype="horizontal" visible="yes"/>
 <dimension x1="86" y1="0.018" x2="84" y2="2.02" x3="95.3008" y3="1.019" textsize="1.778" layer="44" dtype="vertical" visible="yes"/>
 <dimension x1="0" y1="53.018" x2="86.0044" y2="51.6636" x3="43.0022" y3="59.9186" textsize="1.778" layer="20" dtype="horizontal" visible="yes"/>
