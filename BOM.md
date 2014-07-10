@@ -78,7 +78,7 @@ http://akizukidenshi.com/catalog/g/gP-03646/
 6)トグルスイッチ1回路2接点（ON-ONタイプ 80円  
 http://akizukidenshi.com/catalog/g/gP-03774/  
 8)NchパワーMOSFET　IRFU120NPBF  50円×2 100円  
-http://akizukidenshi.com/catalog/g/gI-06050/
+http://akizukidenshi.com/catalog/g/gI-06050/  
 9)ターミナルブロック　2ピン（緑）（縦）小  20円 × ２個  40円  
 http://akizukidenshi.com/catalog/g/gP-02333/  
 10)ピンソケット(メス)1×8(8P) 30円  
