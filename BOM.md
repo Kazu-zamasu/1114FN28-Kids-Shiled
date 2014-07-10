@@ -64,7 +64,7 @@ http://akizukidenshi.com/catalog/g/gI-02426/
 http://akizukidenshi.com/catalog/g/gP-03774/  
 ここで884円  
   
-最終仕様  
+##最終仕様  
 1)半固定ボリューム 0-100kΩ 50円  
 http://akizukidenshi.com/catalog/g/gP-06113/  
 2)フォトICダイオードS9648-100 120円×1  
@@ -85,6 +85,6 @@ http://akizukidenshi.com/catalog/g/gP-02333/
 http://akizukidenshi.com/catalog/g/gC-03785/  
 11)分割ロングピンソケット 1ｘ42(42P)  80円　６個使用　11.4円   
 http://akizukidenshi.com/catalog/g/gC-03785/  
-12)ピンソケット(メス) 1×14 (14P) 50円 ２個使用　100円
-
+12)ピンソケット(メス) 1×14 (14P) 50円 ２個使用　100円  
+http://akizukidenshi.com/catalog/g/gC-00653/  
 合計625.4円　その他基板作成費および実装費用
