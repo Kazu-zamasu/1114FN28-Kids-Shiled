@@ -1532,7 +1532,7 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="77.851" y="-34.417"/>
 <junction x="58.801" y="-34.417"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<label x="70.866" y="-37.592" size="1.778" layer="95"/>
+<label x="65.786" y="-32.512" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="4.191" y1="-52.832" x2="18.796" y2="-52.832" width="0.1524" layer="91"/>
