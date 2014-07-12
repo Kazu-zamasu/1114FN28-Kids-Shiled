@@ -1266,19 +1266,10 @@
 <deviceset name="SIPS-5">
 <gates>
 <gate name="G$1" symbol="SIPS-5" x="0" y="0"/>
+<gate name="G$2" symbol="SIPS-5" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SIPS-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
+<device name="">
 </device>
 </devices>
 </deviceset>
