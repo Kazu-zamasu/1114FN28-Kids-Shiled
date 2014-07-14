@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1279,6 +1279,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-65.831690625" y1="-33.8328" x2="-65.821390625" y2="-40.457434375" width="0.1524" layer="91"/>
 <junction x="-65.828840625" y="-44.601734375"/>
 <junction x="-49.4792" y="-56.7182"/>
+<label x="-82.55" y="29.21" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-65.8622" y1="-6.5532" x2="-89.408" y2="-6.604" width="0.254" layer="91"/>

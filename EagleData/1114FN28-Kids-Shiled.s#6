@@ -340,14 +340,6 @@
 <rectangle x1="4.445" y1="-0.3048" x2="5.3086" y2="0.3048" layer="21"/>
 <rectangle x1="-5.3086" y1="-0.3048" x2="-4.445" y2="0.3048" layer="21"/>
 </package>
-<package name="SIPC-2">
-<wire x1="-1.27" y1="2.2225" x2="1.27" y2="2.2225" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.2225" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.2225" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="1.27" drill="0.8" shape="long"/>
-<pad name="P$2" x="0" y="-1.27" drill="0.8" shape="long"/>
-</package>
 <package name="TACT-SW">
 <wire x1="2.9" y1="2.9" x2="-2.9" y2="2.9" width="0.2032" layer="51"/>
 <wire x1="2.9" y1="-2.9" x2="-2.9" y2="-2.9" width="0.2032" layer="51"/>
@@ -603,12 +595,6 @@
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="SIPS-2">
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<pin name="P1" x="0" y="1.27" visible="pin" length="middle" rot="R180"/>
-<pin name="P2" x="0" y="-1.27" visible="pin" length="middle" rot="R180"/>
-</symbol>
 <symbol name="TACT-SW">
 <wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="0" x2="3.048" y2="1.778" width="0.2032" layer="94"/>
@@ -822,22 +808,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SIPS-2">
-<gates>
-<gate name="G$1" symbol="SIPS-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SIPC-2">
-<connects>
-<connect gate="G$1" pin="P1" pad="P$1"/>
-<connect gate="G$1" pin="P2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TACT-SW" prefix="TACTSW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TACT-SW" x="0" y="0"/>
@@ -978,6 +948,17 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="9" x="0" y="-8.89" drill="0.8" shape="long"/>
 <pad name="10" x="0" y="-11.43" drill="0.8" shape="long"/>
 </package>
+<package name="SIPS-5">
+<wire x1="1.2508" y1="6.5794" x2="-1.2492" y2="6.5794" width="0.127" layer="21"/>
+<wire x1="-1.2492" y1="-6.6206" x2="-1.2492" y2="6.5794" width="0.127" layer="21"/>
+<wire x1="1.2508" y1="-6.6206" x2="-1.2492" y2="-6.6206" width="0.127" layer="21"/>
+<wire x1="1.2508" y1="-6.6206" x2="1.2508" y2="6.5794" width="0.127" layer="21"/>
+<pad name="1" x="0" y="5.08" drill="0.8" shape="long"/>
+<pad name="2" x="0" y="2.54" drill="0.8" shape="long"/>
+<pad name="3" x="0" y="0" drill="0.8" shape="long"/>
+<pad name="4" x="0" y="-2.54" drill="0.8" shape="long"/>
+<pad name="5" x="0" y="-5.08" drill="0.8" shape="long"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SIPS-10">
@@ -1002,6 +983,18 @@ DIN A4, landscape with location and doc. field</description>
 <circle x="-2.54" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 <circle x="-2.54" y="-7.62" radius="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SIPS-5">
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="0" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<circle x="0" y="5.08" radius="0.898025" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="0.898025" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.898025" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.898025" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="0.898025" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SIPS-10">
@@ -1021,6 +1014,25 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SIPS-5">
+<gates>
+<gate name="G$1" symbol="SIPS-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SIPS-5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1053,7 +1065,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U$2" library="Aruduino-Kids-Shiled" deviceset="S9648-100" device=""/>
 <part name="C1" library="Aruduino-Kids-Shiled" deviceset="C-RPEF" device="" value="0.1uF"/>
 <part name="R1" library="Aruduino-Kids-Shiled" deviceset="R" device="" value="10K"/>
-<part name="U$6" library="Aruduino-Kids-Shiled" deviceset="SIPS-2" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -1063,18 +1074,20 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY8" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="U$9" library="Aruduino-Kids-Shiled" deviceset="SIPS-2" device=""/>
-<part name="U$10" library="Aruduino-Kids-Shiled" deviceset="SIPS-2" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY12" library="supply2" deviceset="V&lt;--" device="" value=""/>
-<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="Aruduino-Kids-Shiled" deviceset="R" device="" value="7.5K"/>
 <part name="TACTSW2" library="Aruduino-Kids-Shiled" deviceset="TACT-SW" device="" value="P-03646-R"/>
 <part name="TACTSW1" library="Aruduino-Kids-Shiled" deviceset="TACT-SW" device="" value="P-03646-B"/>
 <part name="SUPPLY6" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY15" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="U$8" library="1114FN28-Kids-Shiled" deviceset="SIPS-10" device=""/>
+<part name="U$3" library="1114FN28-Kids-Shiled" deviceset="SIPS-5" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="V&lt;--" device="" value=""/>
+<part name="SUPPLY10" library="supply2" deviceset="V&lt;--" device="" value=""/>
+<part name="SUPPLY13" library="supply2" deviceset="V&lt;--" device="" value=""/>
+<part name="SUPPLY16" library="supply2" deviceset="V&lt;--" device="" value=""/>
+<part name="SUPPLY17" library="supply2" deviceset="V&lt;--" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1093,10 +1106,8 @@ DIN A4, landscape with location and doc. field</description>
 <circle x="96.647" y="21.336" radius="0.635" width="0.1524" layer="91"/>
 <circle x="101.727" y="21.336" radius="0.635" width="0.1524" layer="91"/>
 <text x="-94.615" y="-7.239" size="1.778" layer="95" align="bottom-right">dp8-(AnalogGND)</text>
-<text x="112.014" y="-9.779" size="1.778" layer="95" align="bottom-right">TP3</text>
 <text x="-5.110959375" y="45.493225" size="1.778" layer="95" rot="MR180" align="bottom-right">TP2</text>
-<text x="-80.899" y="36.068" size="1.778" layer="95" align="bottom-right">TP1</text>
-<text x="91.694" y="-9.779" size="1.778" layer="95" align="bottom-right">TP4</text>
+<text x="-87.503" y="17.272" size="1.778" layer="95" align="bottom-right">TP1</text>
 <text x="72.263" y="34.036" size="1.778" layer="95" rot="R180" align="bottom-right">Tr1</text>
 <text x="72.136" y="4.699" size="1.778" layer="95" rot="R180" align="bottom-right">Tr2</text>
 <text x="-17.653" y="39.751" size="1.778" layer="95" rot="MR180" align="bottom-right">mbed 1114FN28</text>
@@ -1109,9 +1120,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-46.9646" y="-58.9788" size="1.778" layer="95" rot="R180" align="bottom-right">P-06165</text>
 <text x="-62.4586" y="-69.1388" size="1.778" layer="95" rot="MR180" align="bottom-right">R-25752</text>
 <text x="-47.117" y="-80.2132" size="1.778" layer="95" rot="R180" align="bottom-right">I-02426</text>
-<text x="108.585" y="-41.148" size="1.778" layer="95" align="bottom-right">C-05779
-(TP2,TP3,TP4)</text>
-<text x="-109.093" y="38.735" size="1.778" layer="95" align="bottom-right">C-03785</text>
+<text x="-85.725" y="20.447" size="1.778" layer="95" align="bottom-right">C-03785</text>
 <text x="-34.036" y="42.545" size="1.778" layer="95" rot="R180" align="bottom-right">SSCI-017145</text>
 <text x="-94.615" y="-4.699" size="1.778" layer="95" align="bottom-right">dp21-(3.3v In)</text>
 </plain>
@@ -1149,7 +1158,6 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="-45.353228125" y="-62.664459375" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-35.424190625" y="-62.565128125" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$6" gate="G$1" x="-7.493" y="47.371" smashed="yes" rot="R270"/>
 <instance part="SUPPLY1" gate="GND" x="61.976" y="51.943"/>
 <instance part="SUPPLY2" gate="GND" x="121.031" y="51.943"/>
 <instance part="SUPPLY3" gate="GND" x="89.281" y="51.943"/>
@@ -1159,12 +1167,8 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY8" gate="G$1" x="-82.423" y="56.896" rot="MR180"/>
 <instance part="SUPPLY9" gate="GND" x="21.971" y="10.033"/>
 <instance part="FRAME1" gate="G$1" x="-125.857" y="-99.949"/>
-<instance part="U$9" gate="G$1" x="89.408" y="-11.811" smashed="yes" rot="MR90"/>
-<instance part="U$10" gate="G$1" x="109.474" y="-11.938" smashed="yes" rot="MR90"/>
-<instance part="SUPPLY10" gate="GND" x="76.708" y="-21.336"/>
-<instance part="SUPPLY11" gate="G$1" x="58.293" y="-30.226" rot="R180"/>
-<instance part="SUPPLY12" gate="G$1" x="73.914" y="-34.27008125" rot="R180"/>
-<instance part="SUPPLY13" gate="GND" x="96.774" y="-21.463"/>
+<instance part="SUPPLY11" gate="G$1" x="75.3872" y="-17.272" rot="MR0"/>
+<instance part="SUPPLY12" gate="G$1" x="75.438" y="-14.75191875" rot="MR0"/>
 <instance part="R2" gate="G$1" x="-67.8688" y="-74.7522" smashed="yes" rot="R180">
 <attribute name="NAME" x="-66.0908" y="-76.5048" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-65.0748" y="-71.1962" size="1.778" layer="96" rot="R180"/>
@@ -1180,6 +1184,12 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY6" gate="G$1" x="38.718965625" y="21.5445375" rot="R180"/>
 <instance part="SUPPLY15" gate="G$1" x="34.9784375" y="-2.558128125" rot="R180"/>
 <instance part="U$8" gate="G$1" x="-91.948" y="-1.524" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="100.076" y="-19.812"/>
+<instance part="SUPPLY14" gate="G$1" x="75.3872" y="-19.812" rot="MR0"/>
+<instance part="SUPPLY10" gate="G$1" x="75.3872" y="-22.352" rot="MR0"/>
+<instance part="SUPPLY13" gate="G$1" x="75.3872" y="-24.892" rot="MR0"/>
+<instance part="SUPPLY16" gate="G$1" x="-6.239034375" y="54.3105375" rot="R180"/>
+<instance part="SUPPLY17" gate="G$1" x="-6.239034375" y="51.2625375" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1386,22 +1396,30 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$8" gate="G$1" pin="6"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="TX" class="0">
 <segment>
 <wire x1="-39.878" y1="48.006" x2="-39.878" y2="54.356" width="0.1524" layer="91"/>
 <wire x1="-39.878" y1="54.356" x2="-6.223" y2="54.356" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P1"/>
-<wire x1="-6.223" y1="54.356" x2="-6.223" y2="47.371" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="16"/>
+<label x="-0.762" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="4"/>
+<wire x1="100.076" y1="-22.352" x2="90.678" y2="-22.352" width="0.254" layer="91"/>
+<label x="80.518" y="-23.114" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="RX" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="P2"/>
-<wire x1="-8.763" y1="47.371" x2="-8.763" y2="52.451" width="0.1524" layer="91"/>
-<wire x1="-8.763" y1="52.451" x2="-37.338" y2="52.451" width="0.1524" layer="91"/>
-<wire x1="-37.338" y1="52.451" x2="-37.338" y2="48.006" width="0.1524" layer="91"/>
+<wire x1="-6.223" y1="51.181" x2="-37.338" y2="51.181" width="0.1524" layer="91"/>
+<wire x1="-37.338" y1="51.181" x2="-37.338" y2="48.006" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="15"/>
+<label x="-1.016" y="50.292" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="5"/>
+<wire x1="100.076" y1="-24.892" x2="90.678" y2="-24.892" width="0.254" layer="91"/>
+<label x="80.518" y="-25.654" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P24" class="0">
@@ -1420,18 +1438,14 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="29.845" y="2.54"/>
 </segment>
 <segment>
-<wire x1="90.678" y1="-11.811" x2="90.72014375" y2="-29.034340625" width="0.1524" layer="91"/>
-<wire x1="90.72014375" y1="-29.034340625" x2="90.720925" y2="-30.2263875" width="0.1524" layer="91"/>
-<wire x1="90.720925" y1="-30.2263875" x2="89.8795125" y2="-30.228171875" width="0.1524" layer="91"/>
-<wire x1="89.8795125" y1="-30.228171875" x2="78.105" y2="-30.226" width="0.1524" layer="91"/>
-<wire x1="78.105" y1="-30.226" x2="73.533" y2="-30.226" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="P1"/>
-<label x="62.357" y="-31.115" size="1.778" layer="95"/>
+<wire x1="29.8372" y1="2.573309375" x2="29.8372" y2="-2.5513" width="0.1524" layer="91"/>
+<wire x1="29.8372" y1="-2.5513" x2="34.920121875" y2="-2.557278125" width="0.1524" layer="91"/>
 <label x="39.657784375" y="-3.411021875" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="29.8372" y1="2.573309375" x2="29.8372" y2="-2.5513" width="0.1524" layer="91"/>
-<wire x1="29.8372" y1="-2.5513" x2="34.920121875" y2="-2.557278125" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="100.076" y1="-14.732" x2="90.678" y2="-14.732" width="0.254" layer="91"/>
+<label x="80.264" y="-15.494" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P18" class="0">
@@ -1449,19 +1463,15 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$1" gate="G$1" pin="18"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="P1"/>
-<wire x1="110.744" y1="-11.938" x2="110.74578125" y2="-34.1396875" width="0.1524" layer="91"/>
-<wire x1="110.74578125" y1="-34.1396875" x2="110.74578125" y2="-34.29" width="0.1524" layer="91"/>
-<wire x1="110.74578125" y1="-34.29" x2="92.71" y2="-34.29" width="0.1524" layer="91"/>
-<wire x1="92.71" y1="-34.29" x2="91.99235" y2="-34.28910625" width="0.1524" layer="91"/>
-<wire x1="91.99235" y1="-34.28910625" x2="89.143671875" y2="-34.297240625" width="0.1524" layer="91"/>
-<label x="79.143909375" y="-35.0588375" size="1.778" layer="95"/>
-<label x="43.94384375" y="20.71718125" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="33.655" y1="26.67" x2="33.655" y2="21.59" width="0.1524" layer="91"/>
 <wire x1="33.655" y1="21.59" x2="38.735" y2="21.59" width="0.1524" layer="91"/>
 <junction x="33.655" y="26.67"/>
+<label x="47.752" y="22.352" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<wire x1="100.076" y1="-19.812" x2="90.678" y2="-19.812" width="0.254" layer="91"/>
+<label x="80.01" y="-20.5994" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1555,22 +1565,15 @@ DIN A4, landscape with location and doc. field</description>
 <label x="75.692" y="17.526" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="88.138" y1="-11.811" x2="88.138" y2="-18.796" width="0.1524" layer="91"/>
-<wire x1="88.138" y1="-18.796" x2="76.708" y2="-18.796" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="GND" pin="GND"/>
-<pinref part="U$9" gate="G$1" pin="P2"/>
-</segment>
-<segment>
-<pinref part="U$10" gate="G$1" pin="P2"/>
-<wire x1="108.204" y1="-11.938" x2="108.204" y2="-18.923" width="0.1524" layer="91"/>
-<wire x1="108.204" y1="-18.923" x2="96.774" y2="-18.923" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="-50.811690625" y1="59.210459375" x2="-55.097371875" y2="59.20765" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="22"/>
 <wire x1="-55.118" y1="48.006" x2="-55.097371875" y2="59.20765" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="100.076" y1="-17.272" x2="90.678" y2="-17.272" width="0.254" layer="91"/>
+<label x="80.01" y="-18.034" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -1608,10 +1611,4 @@ DIN A4, landscape with location and doc. field</description>
 </errors>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>

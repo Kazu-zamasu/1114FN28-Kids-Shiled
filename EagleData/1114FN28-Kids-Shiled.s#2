@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1311,16 +1311,10 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="23"/>
-<wire x1="-57.658" y1="48.006" x2="-57.6501125" y2="63.074603125" width="0.1524" layer="91"/>
-<wire x1="-57.6501125" y1="63.074603125" x2="-57.6501125" y2="67.9954375" width="0.1524" layer="91"/>
-<wire x1="-57.6501125" y1="67.9954375" x2="68.98868125" y2="67.9954375" width="0.1524" layer="91"/>
-<wire x1="68.98868125" y1="67.9954375" x2="68.98868125" y2="58.293" width="0.1524" layer="91"/>
-<wire x1="68.98868125" y1="58.293" x2="68.961" y2="58.293" width="0.1524" layer="91"/>
-<wire x1="68.961" y1="58.293" x2="68.961" y2="55.753" width="0.1524" layer="91"/>
-<pinref part="TACTSW2" gate="G$1" pin="1"/>
-<junction x="68.961" y="58.293"/>
-<pinref part="TACTSW2" gate="G$1" pin="3"/>
+<wire x1="-89.408" y1="3.556" x2="-60.1472" y2="3.6322" width="0.1524" layer="91"/>
+<wire x1="-60.1472" y1="3.6322" x2="-60.198" y2="32.766" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<pinref part="U$8" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -1376,6 +1370,21 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-89.408" y1="8.636" x2="-57.6072" y2="8.6106" width="0.1524" layer="91"/>
 <wire x1="-57.6072" y1="8.6106" x2="-57.658" y2="32.766" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="-57.658" y1="32.766" x2="-59.0804" y2="32.766" width="0.1524" layer="91"/>
+<wire x1="-59.0804" y1="32.766" x2="-59.0804" y2="32.9184" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-59.055" y1="32.766" x2="-59.0296" y2="67.9958" width="0.1524" layer="91"/>
+<wire x1="-59.0296" y1="67.9958" x2="-57.1246" y2="67.9958" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-57.6501125" y1="67.9954375" x2="68.98868125" y2="67.9954375" width="0.1524" layer="91"/>
+<wire x1="68.98868125" y1="67.9954375" x2="68.98868125" y2="58.293" width="0.1524" layer="91"/>
+<wire x1="68.98868125" y1="58.293" x2="68.961" y2="58.293" width="0.1524" layer="91"/>
+<wire x1="68.961" y1="58.293" x2="68.961" y2="55.753" width="0.1524" layer="91"/>
+<pinref part="TACTSW2" gate="G$1" pin="1"/>
+<junction x="68.961" y="58.293"/>
+<pinref part="TACTSW2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1386,14 +1395,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-67.818" y1="52.578" x2="-67.818" y2="48.006" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="27"/>
 <pinref part="U$8" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<wire x1="-89.408" y1="3.556" x2="-60.1472" y2="3.6322" width="0.1524" layer="91"/>
-<wire x1="-60.1472" y1="3.6322" x2="-60.198" y2="32.766" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
-<pinref part="U$8" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$17" class="0">

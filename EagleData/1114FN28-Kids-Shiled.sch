@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1623,6 +1623,8 @@ DIN A4, landscape with location and doc. field</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="109,1,33.655,26.67,P18,,,,,"/>
+<approved hash="109,1,33.655,26.67,P18,,,,,"/>
 <approved hash="113,1,4.214,-10.518,FRAME1,,,,,"/>
 </errors>
 </schematic>

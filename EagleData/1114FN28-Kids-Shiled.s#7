@@ -1228,6 +1228,10 @@ DIN A4, landscape with location and doc. field</description>
 <label x="-77.8002" y="-33.2232" size="1.778" layer="95" rot="R180"/>
 <junction x="-59.2582" y="-74.7522"/>
 </segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="10"/>
+<wire x1="-89.408" y1="-9.144" x2="-55.118" y2="-9.144" width="0.254" layer="91"/>
+</segment>
 </net>
 <net name="A-GND" class="0">
 <segment>
