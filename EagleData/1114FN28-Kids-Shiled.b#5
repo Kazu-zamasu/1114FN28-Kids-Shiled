@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -115,8 +115,8 @@
 <text x="3.7465" y="21.3438" size="1.778" layer="25">dp5-(sda-I2C)</text>
 <text x="3.7465" y="18.8038" size="1.778" layer="25">dp4-(AnalogIn)</text>
 <text x="3.7465" y="16.2638" size="1.778" layer="25">dp13-(AnalogIn)</text>
-<text x="74.615040625" y="10.686" size="1.778" layer="25" rot="R90">TX</text>
-<text x="77.111859375" y="10.42691875" size="1.778" layer="25" rot="R90">RX</text>
+<text x="74.589640625" y="10.1272" size="1.778" layer="25" rot="R90">RX</text>
+<text x="77.111859375" y="10.42691875" size="1.778" layer="25" rot="R90">TX</text>
 <text x="75.311" y="18.687" size="1.778" layer="25" rot="R90">     P2
 ー (2A)＋</text>
 <text x="75.3092" y="29.4098" size="1.778" layer="25" rot="R90">    P1

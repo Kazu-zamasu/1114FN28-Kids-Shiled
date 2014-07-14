@@ -144,6 +144,7 @@
 <text x="79.651859375" y="7.50591875" size="1.778" layer="25" rot="R90">dp-18</text>
 <text x="82.191859375" y="7.50591875" size="1.778" layer="25" rot="R90">GND</text>
 <text x="84.731859375" y="7.50591875" size="1.778" layer="25" rot="R90">dp-24</text>
+<text x="67.1195" y="14.181" size="1.778" layer="25">TP2</text>
 </plain>
 <libraries>
 <library name="Aruduino-Kids-Shiled">
