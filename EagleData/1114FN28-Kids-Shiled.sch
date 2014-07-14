@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1099,14 +1099,13 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-94.615" y="5.461" size="1.778" layer="95" align="bottom-right">dp27(SCl-I2C)</text>
 <text x="-94.615" y="2.921" size="1.778" layer="95" align="bottom-right">dp5-(sda-I2C)</text>
 <text x="-94.615" y="0.381" size="1.778" layer="95" align="bottom-right">dp4-(AnalogIn)</text>
-<text x="-10.668" y="48.006" size="1.778" layer="95" rot="MR180" align="bottom-right">dp15(Serial-RX)</text>
-<text x="13.462" y="48.641" size="1.778" layer="95" rot="MR180" align="bottom-right">dp16(Serial-TX)</text>
+<text x="27.432" y="51.816" size="1.778" layer="95" rot="MR180" align="bottom-right">dp15(Serial-RX)</text>
+<text x="27.432" y="54.991" size="1.778" layer="95" rot="MR180" align="bottom-right">dp16(Serial-TX)</text>
 <circle x="96.647" y="7.366" radius="0.635" width="0.1524" layer="91"/>
 <circle x="101.727" y="7.366" radius="0.635" width="0.1524" layer="91"/>
 <circle x="96.647" y="21.336" radius="0.635" width="0.1524" layer="91"/>
 <circle x="101.727" y="21.336" radius="0.635" width="0.1524" layer="91"/>
 <text x="-94.615" y="-7.239" size="1.778" layer="95" align="bottom-right">dp8-(AnalogGND)</text>
-<text x="-5.110959375" y="45.493225" size="1.778" layer="95" rot="MR180" align="bottom-right">TP2</text>
 <text x="-87.503" y="17.272" size="1.778" layer="95" align="bottom-right">TP1</text>
 <text x="72.263" y="34.036" size="1.778" layer="95" rot="R180" align="bottom-right">Tr1</text>
 <text x="72.136" y="4.699" size="1.778" layer="95" rot="R180" align="bottom-right">Tr2</text>
@@ -1115,7 +1114,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="105.791" y="22.479" size="1.778" layer="95" rot="MR180" align="bottom-right">P1</text>
 <text x="104.648" y="15.621" size="1.778" layer="95" rot="MR180" align="bottom-right">P-01306</text>
 <text x="-80.0608" y="-70.4342" size="1.778" layer="95" rot="MR180" align="bottom-right">P-07258</text>
-<text x="-112.395" y="-87.8586" size="1.778" layer="95" rot="R180" align="bottom-right">P-06113</text>
+<text x="-111.125" y="-77.6986" size="1.778" layer="95" rot="R180" align="bottom-right">P-06113</text>
 <text x="-46.9646" y="-66.421" size="1.778" layer="95" rot="R180" align="bottom-right">R-25103</text>
 <text x="-46.9646" y="-58.9788" size="1.778" layer="95" rot="R180" align="bottom-right">P-06165</text>
 <text x="-62.4586" y="-69.1388" size="1.778" layer="95" rot="MR180" align="bottom-right">R-25752</text>
@@ -1123,24 +1122,30 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-85.725" y="20.447" size="1.778" layer="95" align="bottom-right">C-03786</text>
 <text x="-34.036" y="42.545" size="1.778" layer="95" rot="R180" align="bottom-right">SSCI-017145</text>
 <text x="-94.615" y="-4.699" size="1.778" layer="95" align="bottom-right">dp21-(3.3v In)</text>
-<text x="85.217" y="-12.573" size="1.778" layer="95" align="bottom-right">TP2</text>
-<text x="86.995" y="-10.033" size="1.778" layer="95" align="bottom-right">C-02762</text>
+<text x="85.217" y="-34.163" size="1.778" layer="95" align="bottom-right">TP2</text>
+<text x="86.995" y="-31.623" size="1.778" layer="95" align="bottom-right">C-02762</text>
+<text x="-94.615" y="-9.779" size="1.778" layer="95" align="bottom-right">dp7-(Analog 3.3v)</text>
+<text x="99.822" y="-33.274" size="1.778" layer="95" rot="MR90" align="bottom-right">dp24(PwmOut)</text>
+<text x="97.282" y="-33.274" size="1.778" layer="95" rot="MR90" align="bottom-right">GND</text>
+<text x="94.742" y="-33.274" size="1.778" layer="95" rot="MR90" align="bottom-right">dp18(PwmOut)</text>
+<text x="92.202" y="-33.274" size="1.778" layer="95" rot="MR90" align="bottom-right">dp16(Serial-TX)</text>
+<text x="89.662" y="-33.274" size="1.778" layer="95" rot="MR90" align="bottom-right">dp15(Serial-RX)</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="1.778" y="26.035" rot="MR270"/>
-<instance part="LED2" gate="G$1" x="1.778" y="15.875" rot="MR270"/>
+<instance part="LED2" gate="G$1" x="1.7627625" y="15.8623" rot="MR270"/>
 <instance part="0-50C" gate="G$1" x="-83.9978" y="-74.7522" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="-75.8698" y="-79.432590625" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="T-SW1" gate="G$1" x="99.441" y="58.293" smashed="yes" rot="MR0">
-<attribute name="NAME" x="107.569" y="52.324" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="107.569" y="54.991" size="1.778" layer="96" rot="MR0"/>
+<instance part="T-SW1" gate="G$1" x="99.441" y="55.753" smashed="yes" rot="MR0">
+<attribute name="NAME" x="107.569" y="49.784" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="107.569" y="52.451" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TB1" gate="G$1" x="95.377" y="25.146" smashed="yes" rot="R270"/>
 <instance part="TB2" gate="G$1" x="95.377" y="3.556" smashed="yes" rot="MR90"/>
-<instance part="VR.1" gate="G$1" x="-106.807" y="-84.0486" smashed="yes" rot="R90">
-<attribute name="NAME" x="-114.173" y="-80.4926" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-105.41" y="-80.6196" size="1.778" layer="96"/>
+<instance part="VR.1" gate="G$1" x="-106.76381875" y="-74.754740625" smashed="yes" rot="R90">
+<attribute name="NAME" x="-114.12981875" y="-71.198740625" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-105.36681875" y="-71.325740625" size="1.778" layer="96"/>
 </instance>
 <instance part="U$4" gate="G$1" x="75.057" y="28.956" smashed="yes">
 <attribute name="VALUE" x="86.995" y="31.369" size="1.778" layer="96" rot="R180"/>
@@ -1164,13 +1169,13 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY2" gate="GND" x="121.031" y="51.943"/>
 <instance part="SUPPLY3" gate="GND" x="89.281" y="51.943"/>
 <instance part="SUPPLY4" gate="GND" x="86.487" y="12.446"/>
-<instance part="SUPPLY5" gate="GND" x="-50.811690625" y="56.670459375"/>
+<instance part="SUPPLY5" gate="GND" x="-49.638209375" y="56.65268125"/>
 <instance part="SUPPLY7" gate="G$1" x="-27.432" y="15.875" rot="MR0"/>
 <instance part="SUPPLY8" gate="G$1" x="-82.423" y="56.896" rot="MR180"/>
 <instance part="SUPPLY9" gate="GND" x="21.971" y="10.033"/>
 <instance part="FRAME1" gate="G$1" x="-125.857" y="-99.949"/>
-<instance part="SUPPLY11" gate="G$1" x="75.3872" y="-17.272" rot="MR0"/>
-<instance part="SUPPLY12" gate="G$1" x="75.438" y="-14.75191875" rot="MR0"/>
+<instance part="SUPPLY11" gate="G$1" x="56.3372" y="-13.462" rot="MR0"/>
+<instance part="SUPPLY12" gate="G$1" x="60.198" y="-10.94191875" rot="MR0"/>
 <instance part="R2" gate="G$1" x="-67.8688" y="-74.7522" smashed="yes" rot="R180">
 <attribute name="NAME" x="-66.0908" y="-76.5048" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-65.0748" y="-71.1962" size="1.778" layer="96" rot="R180"/>
@@ -1186,10 +1191,10 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY6" gate="G$1" x="38.718965625" y="21.5445375" rot="R180"/>
 <instance part="SUPPLY15" gate="G$1" x="34.9784375" y="-2.558128125" rot="R180"/>
 <instance part="U$8" gate="G$1" x="-91.948" y="-1.524" rot="MR0"/>
-<instance part="U$3" gate="G$1" x="100.076" y="-19.812"/>
-<instance part="SUPPLY14" gate="G$1" x="75.3872" y="-19.812" rot="MR0"/>
-<instance part="SUPPLY10" gate="G$1" x="75.3872" y="-22.352" rot="MR0"/>
-<instance part="SUPPLY13" gate="G$1" x="75.3872" y="-24.892" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="95.758" y="-31.496" rot="R270"/>
+<instance part="SUPPLY14" gate="G$1" x="51.2572" y="-16.002" rot="MR0"/>
+<instance part="SUPPLY10" gate="G$1" x="47.4472" y="-18.542" rot="MR0"/>
+<instance part="SUPPLY13" gate="G$1" x="43.6372" y="-21.082" rot="MR0"/>
 <instance part="SUPPLY16" gate="G$1" x="-6.239034375" y="54.3105375" rot="R180"/>
 <instance part="SUPPLY17" gate="G$1" x="-6.239034375" y="51.2625375" rot="R180"/>
 </instances>
@@ -1217,25 +1222,25 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="-2.032" y1="15.875" x2="-12.192" y2="15.875" width="0.1524" layer="91"/>
+<wire x1="-2.0472375" y1="15.8623" x2="-12.192" y2="15.875" width="0.1524" layer="91"/>
 <label x="-21.717" y="14.986" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<wire x1="-116.713" y1="-84.0486" x2="-116.713" y2="-35.7632" width="0.1524" layer="91"/>
+<wire x1="-116.8298375" y1="-74.757278125" x2="-116.713" y2="-35.7632" width="0.1524" layer="91"/>
 <pinref part="VR.1" gate="G$1" pin="E"/>
 <wire x1="-116.713" y1="-35.7632" x2="-55.1434" y2="-35.7632" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="7"/>
 <wire x1="-55.1434" y1="-35.7632" x2="-55.118" y2="32.766" width="0.1524" layer="91"/>
 <wire x1="-59.2582" y1="-74.7522" x2="-62.7888" y2="-74.7522" width="0.1524" layer="91"/>
-<wire x1="-111.887" y1="-84.0486" x2="-116.713" y2="-84.0486" width="0.1524" layer="91"/>
-<wire x1="-116.713" y1="-84.0486" x2="-116.713" y2="-93.9292" width="0.1524" layer="91"/>
-<wire x1="-116.713" y1="-93.9292" x2="-59.2582" y2="-93.9546" width="0.1524" layer="91"/>
-<wire x1="-59.2582" y1="-93.9546" x2="-59.2582" y2="-74.7522" width="0.1524" layer="91"/>
+<wire x1="-111.84381875" y1="-74.754740625" x2="-116.8298375" y2="-74.757278125" width="0.1524" layer="91"/>
+<wire x1="-116.8298375" y1="-74.757278125" x2="-116.834921875" y2="-81.285078125" width="0.1524" layer="91"/>
+<wire x1="-116.834921875" y1="-81.285078125" x2="-59.2582" y2="-81.2546" width="0.1524" layer="91"/>
+<wire x1="-59.2582" y1="-81.2546" x2="-59.2582" y2="-74.7522" width="0.1524" layer="91"/>
 <wire x1="-59.2582" y1="-74.7522" x2="-46.3296" y2="-74.803" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="C"/>
-<junction x="-116.713" y="-84.0486"/>
+<junction x="-116.8298375" y="-74.757278125"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="-77.8002" y="-33.2232" size="1.778" layer="95" rot="R180"/>
 <junction x="-59.2582" y="-74.7522"/>
@@ -1247,8 +1252,8 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="A-GND" class="0">
 <segment>
-<wire x1="-101.727" y1="-84.0486" x2="-96.2406" y2="-84.0232" width="0.1524" layer="91"/>
-<wire x1="-96.2406" y1="-84.0232" x2="-96.2152" y2="-74.7522" width="0.1524" layer="91"/>
+<wire x1="-101.68381875" y1="-74.754740625" x2="-98.168459375" y2="-74.75981875" width="0.1524" layer="91"/>
+<wire x1="-98.168459375" y1="-74.75981875" x2="-96.2152" y2="-74.7522" width="0.1524" layer="91"/>
 <pinref part="VR.1" gate="G$1" pin="A"/>
 <pinref part="U$1" gate="G$1" pin="8"/>
 <wire x1="-96.2152" y1="-56.7182" x2="-96.2787" y2="-44.5871625" width="0.1524" layer="91"/>
@@ -1274,6 +1279,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-65.831690625" y1="-33.8328" x2="-65.821390625" y2="-40.457434375" width="0.1524" layer="91"/>
 <junction x="-65.828840625" y="-44.601734375"/>
 <junction x="-49.4792" y="-56.7182"/>
+<label x="-82.55" y="29.21" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-65.8622" y1="-6.5532" x2="-89.408" y2="-6.604" width="0.254" layer="91"/>
@@ -1284,7 +1290,7 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="9"/>
 <pinref part="VR.1" gate="G$1" pin="S"/>
-<wire x1="-106.807" y1="-78.9686" x2="-106.807" y2="-39.5986" width="0.1524" layer="91"/>
+<wire x1="-106.76381875" y1="-69.674740625" x2="-106.807" y2="-39.5986" width="0.1524" layer="91"/>
 <wire x1="-106.807" y1="-39.5986" x2="-50.007346875" y2="-39.601159375" width="0.1524" layer="91"/>
 <wire x1="-50.007346875" y1="-39.601159375" x2="-50.038" y2="32.766" width="0.1524" layer="91"/>
 </segment>
@@ -1305,16 +1311,10 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="23"/>
-<wire x1="-57.658" y1="48.006" x2="-57.6501125" y2="63.074603125" width="0.1524" layer="91"/>
-<wire x1="-57.6501125" y1="63.074603125" x2="-57.6501125" y2="67.9954375" width="0.1524" layer="91"/>
-<wire x1="-57.6501125" y1="67.9954375" x2="68.98868125" y2="67.9954375" width="0.1524" layer="91"/>
-<wire x1="68.98868125" y1="67.9954375" x2="68.98868125" y2="58.293" width="0.1524" layer="91"/>
-<wire x1="68.98868125" y1="58.293" x2="68.961" y2="58.293" width="0.1524" layer="91"/>
-<wire x1="68.961" y1="58.293" x2="68.961" y2="55.753" width="0.1524" layer="91"/>
-<pinref part="TACTSW2" gate="G$1" pin="1"/>
-<junction x="68.961" y="58.293"/>
-<pinref part="TACTSW2" gate="G$1" pin="3"/>
+<wire x1="-89.408" y1="3.556" x2="-60.1472" y2="3.6322" width="0.1524" layer="91"/>
+<wire x1="-60.1472" y1="3.6322" x2="-60.198" y2="32.766" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<pinref part="U$8" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -1341,16 +1341,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-65.275234375" y1="72.16508125" x2="94.361" y2="72.263" width="0.1524" layer="91"/>
 <pinref part="T-SW1" gate="G$1" pin="1"/>
 <wire x1="94.361" y1="72.263" x2="94.348475" y2="68.430140625" width="0.1524" layer="91"/>
-<wire x1="94.348475" y1="68.430140625" x2="94.348475" y2="65.408346875" width="0.1524" layer="91"/>
-<wire x1="94.348475" y1="65.408346875" x2="94.361" y2="60.833" width="0.1524" layer="91"/>
+<wire x1="94.348475" y1="68.430140625" x2="94.348475" y2="62.868346875" width="0.1524" layer="91"/>
+<wire x1="94.348475" y1="62.868346875" x2="94.361" y2="58.293" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="26"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="T-SW1" gate="G$1" pin="3"/>
-<wire x1="94.361" y1="55.753" x2="93.0925625" y2="55.753" width="0.1524" layer="91"/>
-<wire x1="93.0925625" y1="55.753" x2="93.0925625" y2="70.039425" width="0.1524" layer="91"/>
+<wire x1="94.361" y1="53.213" x2="93.0925625" y2="53.213" width="0.1524" layer="91"/>
+<wire x1="93.0925625" y1="53.213" x2="93.0925625" y2="70.039425" width="0.1524" layer="91"/>
 <wire x1="93.0925625" y1="70.039425" x2="-62.613015625" y2="70.0195625" width="0.1524" layer="91"/>
 <wire x1="-62.613015625" y1="70.0195625" x2="-62.738" y2="48.006" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="25"/>
@@ -1370,6 +1370,21 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-89.408" y1="8.636" x2="-57.6072" y2="8.6106" width="0.1524" layer="91"/>
 <wire x1="-57.6072" y1="8.6106" x2="-57.658" y2="32.766" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="-57.658" y1="32.766" x2="-59.0804" y2="32.766" width="0.1524" layer="91"/>
+<wire x1="-59.0804" y1="32.766" x2="-59.0804" y2="36.7284" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-59.055" y1="36.576" x2="-59.0296" y2="67.9958" width="0.1524" layer="91"/>
+<wire x1="-59.0296" y1="67.9958" x2="-57.1246" y2="67.9958" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-57.6501125" y1="67.9954375" x2="68.98868125" y2="67.9954375" width="0.1524" layer="91"/>
+<wire x1="68.98868125" y1="67.9954375" x2="68.98868125" y2="58.293" width="0.1524" layer="91"/>
+<wire x1="68.98868125" y1="58.293" x2="68.961" y2="58.293" width="0.1524" layer="91"/>
+<wire x1="68.961" y1="58.293" x2="68.961" y2="55.753" width="0.1524" layer="91"/>
+<pinref part="TACTSW2" gate="G$1" pin="1"/>
+<junction x="68.961" y="58.293"/>
+<pinref part="TACTSW2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1380,14 +1395,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-67.818" y1="52.578" x2="-67.818" y2="48.006" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="27"/>
 <pinref part="U$8" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<wire x1="-89.408" y1="3.556" x2="-60.1472" y2="3.6322" width="0.1524" layer="91"/>
-<wire x1="-60.1472" y1="3.6322" x2="-60.198" y2="32.766" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
-<pinref part="U$8" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -1407,8 +1414,10 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="4"/>
-<wire x1="100.076" y1="-22.352" x2="90.678" y2="-22.352" width="0.254" layer="91"/>
-<label x="80.518" y="-23.114" size="1.778" layer="95"/>
+<wire x1="93.218" y1="-31.496" x2="93.207840625" y2="-20.88641875" width="0.254" layer="91"/>
+<wire x1="93.207840625" y1="-20.88641875" x2="93.207840625" y2="-18.582640625" width="0.254" layer="91"/>
+<wire x1="93.207840625" y1="-18.582640625" x2="62.710059375" y2="-18.582640625" width="0.254" layer="91"/>
+<label x="52.578" y="-19.304" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -1420,8 +1429,10 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="5"/>
-<wire x1="100.076" y1="-24.892" x2="90.678" y2="-24.892" width="0.254" layer="91"/>
-<label x="80.518" y="-25.654" size="1.778" layer="95"/>
+<wire x1="90.678" y1="-31.496" x2="90.67291875" y2="-21.071840625" width="0.254" layer="91"/>
+<wire x1="90.67291875" y1="-21.071840625" x2="74.16291875" y2="-21.130259375" width="0.254" layer="91"/>
+<wire x1="74.16291875" y1="-21.130259375" x2="58.963559375" y2="-21.130259375" width="0.254" layer="91"/>
+<label x="48.768" y="-21.844" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P24" class="0">
@@ -1446,8 +1457,10 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="1"/>
-<wire x1="100.076" y1="-14.732" x2="90.678" y2="-14.732" width="0.254" layer="91"/>
-<label x="80.264" y="-15.494" size="1.778" layer="95"/>
+<wire x1="100.838" y1="-31.496" x2="100.810059375" y2="-14.80311875" width="0.254" layer="91"/>
+<wire x1="100.810059375" y1="-14.80311875" x2="100.810059375" y2="-10.975340625" width="0.254" layer="91"/>
+<wire x1="100.810059375" y1="-10.975340625" x2="75.44308125" y2="-10.975340625" width="0.254" layer="91"/>
+<label x="65.024" y="-11.684" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P18" class="0">
@@ -1472,8 +1485,10 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="3"/>
-<wire x1="100.076" y1="-19.812" x2="90.678" y2="-19.812" width="0.254" layer="91"/>
-<label x="80.01" y="-20.5994" size="1.778" layer="95"/>
+<wire x1="95.758" y1="-31.496" x2="95.74021875" y2="-19.618959375" width="0.254" layer="91"/>
+<wire x1="95.74021875" y1="-19.618959375" x2="95.74021875" y2="-16.04518125" width="0.254" layer="91"/>
+<wire x1="95.74021875" y1="-16.04518125" x2="66.51498125" y2="-16.04518125" width="0.254" layer="91"/>
+<label x="55.88" y="-16.7894" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1517,16 +1532,15 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="5.588" y1="26.035" x2="21.971" y2="26.031378125" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="5.588" y1="15.875" x2="21.971" y2="15.871378125" width="0.1524" layer="91"/>
+<wire x1="5.5727625" y1="15.8623" x2="21.971" y2="15.871378125" width="0.1524" layer="91"/>
 <junction x="21.971" y="15.871378125"/>
 <label x="5.461" y="17.018" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="121.031" y1="58.293" x2="121.031" y2="54.483" width="0.1524" layer="91"/>
-<wire x1="104.521" y1="58.293" x2="121.031" y2="58.293" width="0.1524" layer="91"/>
+<wire x1="121.031" y1="55.753" x2="121.031" y2="54.483" width="0.1524" layer="91"/>
+<wire x1="104.521" y1="55.753" x2="121.031" y2="55.753" width="0.1524" layer="91"/>
 <pinref part="T-SW1" gate="G$1" pin="2COM"/>
-<label x="115.316" y="60.198" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="51.816" y1="55.753" x2="61.97294375" y2="55.80154375" width="0.1524" layer="91"/>
@@ -1537,7 +1551,6 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="51.816" y="55.753"/>
 <pinref part="TACTSW1" gate="G$1" pin="2"/>
 <pinref part="TACTSW1" gate="G$1" pin="4"/>
-<label x="58.166" y="57.023" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
@@ -1548,7 +1561,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="89.2734125" y1="55.7589625" x2="89.2734125" y2="54.483" width="0.1524" layer="91"/>
 <wire x1="89.2734125" y1="54.483" x2="89.281" y2="54.483" width="0.1524" layer="91"/>
 <pinref part="TACTSW2" gate="G$1" pin="2"/>
-<label x="82.931" y="57.658" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="S"/>
@@ -1568,14 +1580,16 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="-50.811690625" y1="59.210459375" x2="-55.097371875" y2="59.20765" width="0.1524" layer="91"/>
+<wire x1="-49.638209375" y1="59.19268125" x2="-55.097371875" y2="59.20765" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="22"/>
 <wire x1="-55.118" y1="48.006" x2="-55.097371875" y2="59.20765" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="100.076" y1="-17.272" x2="90.678" y2="-17.272" width="0.254" layer="91"/>
-<label x="80.01" y="-18.034" size="1.778" layer="95"/>
+<wire x1="98.298" y1="-31.496" x2="98.275140625" y2="-17.8435" width="0.254" layer="91"/>
+<wire x1="98.275140625" y1="-17.8435" x2="98.275140625" y2="-13.502640625" width="0.254" layer="91"/>
+<wire x1="98.275140625" y1="-13.502640625" x2="71.592440625" y2="-13.502640625" width="0.254" layer="91"/>
+<label x="60.96" y="-14.224" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
