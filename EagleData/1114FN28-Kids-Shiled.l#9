@@ -879,11 +879,11 @@
 <circle x="-2.54" y="-7.62" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="SIPS-5">
-<pin name="1" x="0" y="5.08" visible="pad" length="short" rot="R180"/>
-<pin name="2" x="0" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="3" x="0" y="0" visible="pad" length="short" rot="R180"/>
-<pin name="4" x="0" y="-2.54" visible="pad" length="short" rot="R180"/>
-<pin name="5" x="0" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="0" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="0" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <circle x="0" y="5.08" radius="0.898025" width="0.254" layer="94"/>
 <circle x="0" y="2.54" radius="0.898025" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="0.898025" width="0.254" layer="94"/>
@@ -1270,9 +1270,6 @@
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
 </device>
 </devices>
 </deviceset>
