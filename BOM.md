@@ -93,7 +93,7 @@ http://akizukidenshi.com/catalog/g/gC-00653/
 ##軽微変更 
 8)NchパワーMOSFET　IRFU120NPBF  50円×2 100円  
 http://akizukidenshi.com/catalog/g/gI-06050/  
-を以下に　
+を以下に  　
 8)NchパワーMOSFET(100V17A) IRLU3410PBF 60円×2 120円  
 http://akizukidenshi.com/catalog/g/gI-06025/  
 合計645.4円　その他基板作成費および実装費用  
