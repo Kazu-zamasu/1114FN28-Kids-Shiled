@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -275,19 +275,6 @@
 <wire x1="-7.62" y1="-17.78" x2="-7.62" y2="33.02" width="0.127" layer="48"/>
 <wire x1="-7.62" y1="33.02" x2="0" y2="33.02" width="0.127" layer="48"/>
 </package>
-<package name="PHOTO-IC">
-<circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
-<pad name="P$1" x="-1.27" y="0" drill="0.8"/>
-<pad name="P$2" x="1.27" y="0" drill="0.8"/>
-<wire x1="1.27" y1="3.81" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="3.81" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="3.81" y2="5.08" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="5.08" y2="3.81" width="0.127" layer="21"/>
-<text x="-3.81" y="-3.81" size="1.27" layer="21">S9648-100</text>
-</package>
 <package name="C">
 <wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
@@ -545,31 +532,6 @@
 <wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="19.05" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PHOTO-IC">
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.048" y1="-3.048" x2="1.651" y2="-1.651" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="-3.175" x2="0.508" y2="-1.778" width="0.1524" layer="94"/>
-<text x="3.302" y="3.556" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="3.302" y="5.715" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
-<pin name="C" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="1.651" y="-1.651"/>
-<vertex x="2.54" y="-2.032"/>
-<vertex x="2.032" y="-2.54"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="0.508" y="-1.778"/>
-<vertex x="1.397" y="-2.159"/>
-<vertex x="0.889" y="-2.667"/>
-</polygon>
-</symbol>
 <symbol name="C">
 <wire x1="0" y1="1.27" x2="0" y2="0.762" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0" y2="-0.762" width="0.1524" layer="94"/>
@@ -760,22 +722,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="S9648-100">
-<gates>
-<gate name="G$1" symbol="PHOTO-IC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PHOTO-IC">
-<connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="C-RPEF" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
@@ -959,6 +905,23 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="4" x="0" y="-2.54" drill="0.8" shape="long"/>
 <pad name="5" x="0" y="-5.08" drill="0.8" shape="long"/>
 </package>
+<package name="PHOTO-IC">
+<circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.27" y="0" drill="0.8"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="3.81" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.54" x2="3.81" y2="5.08" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="5.08" y2="3.81" width="0.127" layer="21"/>
+<text x="-3.81" y="-3.81" size="1.27" layer="21">S9648-100</text>
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SIPS-10">
@@ -994,6 +957,31 @@ DIN A4, landscape with location and doc. field</description>
 <circle x="0" y="0" radius="0.898025" width="0.254" layer="94"/>
 <circle x="0" y="-2.54" radius="0.898025" width="0.254" layer="94"/>
 <circle x="0" y="-5.08" radius="0.898025" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PHOTO-IC">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-3.048" x2="1.651" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-3.175" x2="0.508" y2="-1.778" width="0.1524" layer="94"/>
+<text x="3.302" y="3.556" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="3.302" y="5.715" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
+<pin name="C" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.651" y="-1.651"/>
+<vertex x="2.54" y="-2.032"/>
+<vertex x="2.032" y="-2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0.508" y="-1.778"/>
+<vertex x="1.397" y="-2.159"/>
+<vertex x="0.889" y="-2.667"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1040,6 +1028,22 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="S9648-100">
+<gates>
+<gate name="G$1" symbol="PHOTO-IC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PHOTO-IC">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1059,10 +1063,9 @@ DIN A4, landscape with location and doc. field</description>
 <part name="TB1" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="P-01306"/>
 <part name="TB2" library="Aruduino-Kids-Shiled" deviceset="TB112-2-2-U-1" device="" value="P-01306"/>
 <part name="VR.1" library="Aruduino-Kids-Shiled" deviceset="TSR-3386K" device="" value="10K"/>
-<part name="U$4" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="IR-6050"/>
-<part name="U$5" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="IR6050"/>
+<part name="U$4" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="I-6025"/>
+<part name="U$5" library="Aruduino-Kids-Shiled" deviceset="ＩＲＦＵ１２０Ｎ" device="" value="I-6025"/>
 <part name="U$1" library="Aruduino-Kids-Shiled" deviceset="FH-1X14" device=""/>
-<part name="U$2" library="Aruduino-Kids-Shiled" deviceset="S9648-100" device=""/>
 <part name="C1" library="Aruduino-Kids-Shiled" deviceset="C-RPEF" device="" value="0.1uF"/>
 <part name="R1" library="Aruduino-Kids-Shiled" deviceset="R" device="" value="10K"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
@@ -1088,6 +1091,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY13" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY16" library="supply2" deviceset="V&lt;--" device="" value=""/>
 <part name="SUPPLY17" library="supply2" deviceset="V&lt;--" device="" value=""/>
+<part name="U$2" library="1114FN28-Kids-Shiled" deviceset="S9648-100" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1118,7 +1122,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-46.9646" y="-66.421" size="1.778" layer="95" rot="R180" align="bottom-right">R-25103</text>
 <text x="-46.9646" y="-58.9788" size="1.778" layer="95" rot="R180" align="bottom-right">P-06165</text>
 <text x="-62.4586" y="-69.1388" size="1.778" layer="95" rot="MR180" align="bottom-right">R-25752</text>
-<text x="-47.117" y="-80.2132" size="1.778" layer="95" rot="R180" align="bottom-right">I-02426</text>
+<text x="-46.482" y="-76.6572" size="1.778" layer="95" rot="R180" align="bottom-right">I-02426</text>
 <text x="-85.725" y="20.447" size="1.778" layer="95" align="bottom-right">C-03786</text>
 <text x="-34.036" y="42.545" size="1.778" layer="95" rot="R180" align="bottom-right">SSCI-017145</text>
 <text x="-94.615" y="-4.699" size="1.778" layer="95" align="bottom-right">dp21-(3.3v In)</text>
@@ -1154,9 +1158,6 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="VALUE" x="86.233" y="0" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="U$1" gate="G$1" x="-53.848" y="40.386" rot="R90"/>
-<instance part="U$2" gate="G$1" x="-42.5196" y="-74.803" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-36.9316" y="-77.343" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C1" gate="G$1" x="-42.2402" y="-56.7182" smashed="yes" rot="R90">
 <attribute name="NAME" x="-45.0088" y="-54.5338" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-34.537653125" y="-54.481903125" size="1.778" layer="96" rot="R180"/>
@@ -1197,6 +1198,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY13" gate="G$1" x="43.6372" y="-21.082" rot="MR0"/>
 <instance part="SUPPLY16" gate="G$1" x="-6.239034375" y="54.3105375" rot="R180"/>
 <instance part="SUPPLY17" gate="G$1" x="-6.239034375" y="51.2625375" rot="R180"/>
+<instance part="U$2" gate="G$1" x="-42.545" y="-74.803" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-49.657" y="-71.628" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1238,16 +1242,17 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-116.8298375" y1="-74.757278125" x2="-116.834921875" y2="-81.285078125" width="0.1524" layer="91"/>
 <wire x1="-116.834921875" y1="-81.285078125" x2="-59.2582" y2="-81.2546" width="0.1524" layer="91"/>
 <wire x1="-59.2582" y1="-81.2546" x2="-59.2582" y2="-74.7522" width="0.1524" layer="91"/>
-<wire x1="-59.2582" y1="-74.7522" x2="-46.3296" y2="-74.803" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="C"/>
 <junction x="-116.8298375" y="-74.757278125"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="-77.8002" y="-33.2232" size="1.778" layer="95" rot="R180"/>
-<junction x="-59.2582" y="-74.7522"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="10"/>
 <wire x1="-89.408" y1="-9.144" x2="-55.118" y2="-9.144" width="0.254" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="C"/>
+<wire x1="-46.355" y1="-74.803" x2="-59.309" y2="-74.803" width="0.254" layer="91"/>
 </segment>
 </net>
 <net name="A-GND" class="0">
@@ -1497,10 +1502,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-37.0332" y1="-64.7446" x2="-34.7472" y2="-64.7446" width="0.1524" layer="91"/>
 <wire x1="-34.7472" y1="-64.7446" x2="-34.7472" y2="-56.7182" width="0.1524" layer="91"/>
 <wire x1="-34.7472" y1="-56.7182" x2="-28.857959375" y2="-56.70115" width="0.1524" layer="91"/>
-<wire x1="-38.7096" y1="-74.803" x2="-28.7782" y2="-74.7776" width="0.1524" layer="91"/>
 <wire x1="-28.7782" y1="-74.7776" x2="-28.7782" y2="-56.7182" width="0.1524" layer="91"/>
 <wire x1="-28.7782" y1="-56.7182" x2="-28.857959375" y2="-56.70115" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
 <wire x1="-44.958" y1="32.766" x2="-44.92679375" y2="-42.1423375" width="0.1524" layer="91"/>
 <wire x1="-44.92679375" y1="-42.1423375" x2="-28.8544" y2="-42.1386" width="0.1524" layer="91"/>
 <wire x1="-28.8544" y1="-42.1386" x2="-28.857959375" y2="-56.70115" width="0.1524" layer="91"/>
@@ -1509,6 +1512,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-38.4302" y1="-56.7182" x2="-34.7472" y2="-56.7182" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="11"/>
 <junction x="-34.7472" y="-56.7182"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="A"/>
+<wire x1="-38.735" y1="-74.803" x2="-28.829" y2="-74.803" width="0.254" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
